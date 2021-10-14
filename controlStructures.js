@@ -120,3 +120,24 @@ for (let d = startRange; d <=endRange; d++) {
 for (let st = 1; st <= 5; st++) {
     console.log('*' . repeat(st));
 } 
+
+
+// // 4 EXTRA 2
+let gcd = (num1, num2) => {
+  
+    //Loop till both numbers are not equal
+    for(;num1 != num2;){
+      
+      //check if num1 > num2
+      if(num1 > num2){
+        //Subtract num2 from num1
+        num1 = num1 - num2;
+      }else{
+        //Subtract num1 from num2
+        num2 = num2 - num1;
+      }
+    }
+    
+    return num2;
+  }
+  console.log(gcd(336, 360));
